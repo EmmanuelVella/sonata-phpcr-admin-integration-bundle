@@ -9,10 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle;
-
 return [
-
     Sonata\SeoBundle\SonataSeoBundle::class => ['all' => true],
     Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle::class => ['all' => true],
 
