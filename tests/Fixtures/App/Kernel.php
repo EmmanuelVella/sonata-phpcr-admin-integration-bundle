@@ -25,25 +25,11 @@ class Kernel extends TestKernel
             'sonata_admin_phpcr',
         ]);
 
-        $this->addBundles([
-            new Sonata\SeoBundle\SonataSeoBundle(),
-            new Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle(),
-
-            new Symfony\Cmf\Bundle\SonataPhpcrAdminIntegrationBundle\CmfSonataPhpcrAdminIntegrationBundle(),
-            new Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
-            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
-            new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
-            new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
-            new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
-            new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
-            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
-        ]);
-
+        $this->registerConfiguredBundles();
         if (class_exists('Symfony\Cmf\Bundle\ResourceRestBundle\CmfResourceRestBundle')) {
             $this->addBundles([
-                new Symfony\Cmf\Bundle\ResourceBundle\CmfResourceBundle(),
-                new Symfony\Cmf\Bundle\ResourceRestBundle\CmfResourceRestBundle(),
+                new \Symfony\Cmf\Bundle\ResourceBundle\CmfResourceBundle(),
+                new \Symfony\Cmf\Bundle\ResourceRestBundle\CmfResourceRestBundle(),
             ]);
         }
     }
