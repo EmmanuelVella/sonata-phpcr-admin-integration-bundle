@@ -19,7 +19,7 @@ under the [MIT License](LICENSE).
 
 ## Requirements
 
-* PHP 7.0 / 7.1
+* PHP 7.1
 * Symfony 2.8 / 3.3 / ^3.4@dev / ^4.0@dev
 * See also the `require` section of [composer.json](composer.json)
 
