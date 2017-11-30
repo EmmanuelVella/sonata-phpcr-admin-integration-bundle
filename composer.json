@@ -42,8 +42,6 @@
         "symfony/browser-kit": "^2.8 || ^3.3 || ^4.0",
         "symfony/css-selector": "^2.8 || ^3.3 || ^4.0"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "suggest": {
         "symfony-cmf/routing-bundle": "To make use of the alternate locale provider.",
         "doctrine/phpcr-bundle": "To persist the metadata in PHPCR ODM documents",
