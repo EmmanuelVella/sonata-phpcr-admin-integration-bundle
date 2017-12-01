@@ -9,10 +9,17 @@
  * file that was distributed with this source code.
  */
 
+use FOS\JsRoutingBundle\FOSJsRoutingBundle;
+use Knp\Bundle\MenuBundle\KnpMenuBundle;
+use Sonata\AdminBundle\SonataAdminBundle;
+use Sonata\BlockBundle\SonataBlockBundle;
+use Sonata\CoreBundle\SonataCoreBundle;
+use Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle;
+use Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle;
+
 return [
     Sonata\SeoBundle\SonataSeoBundle::class => ['all' => true],
     Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle::class => ['all' => true],
-
     Symfony\Cmf\Bundle\SonataPhpcrAdminIntegrationBundle\CmfSonataPhpcrAdminIntegrationBundle::class => ['all' => true],
     Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle::class => ['all' => true],
     Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle::class => ['all' => true],
@@ -22,4 +29,11 @@ return [
     Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle::class => ['all' => true],
     JMS\SerializerBundle\JMSSerializerBundle::class => ['all' => true],
     Ivory\CKEditorBundle\IvoryCKEditorBundle::class => ['all' => true],
+    SonataBlockBundle::class => ['all' => true],
+    SonataCoreBundle::class => ['all' => true],
+    SonataAdminBundle::class => ['all' => true],
+    KnpMenuBundle::class => ['all' => true],
+    FOSJsRoutingBundle::class => ['all' => true],
+    SonataDoctrinePHPCRAdminBundle::class => ['all' => true],
+    CmfTreeBrowserBundle::class => ['all' => true],
 ];
