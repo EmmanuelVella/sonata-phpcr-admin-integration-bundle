@@ -20,10 +20,7 @@ class Kernel extends TestKernel
     {
         $this->requireBundleSet('default');
 
-        $this->requireBundleSets([
-            'phpcr_odm',
-            'sonata_admin_phpcr',
-        ]);
+        $this->requireBundleSets(['phpcr_odm']);
 
         $this->registerConfiguredBundles();
         if (class_exists('Symfony\Cmf\Bundle\ResourceRestBundle\CmfResourceRestBundle')) {
