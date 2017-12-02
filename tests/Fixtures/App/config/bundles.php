@@ -33,7 +33,6 @@ return [
     SonataCoreBundle::class => ['all' => true],
     SonataAdminBundle::class => ['all' => true],
     KnpMenuBundle::class => ['all' => true],
-    FOSJsRoutingBundle::class => ['all' => true],
     SonataDoctrinePHPCRAdminBundle::class => ['all' => true],
     CmfTreeBrowserBundle::class => ['all' => true],
 ];
